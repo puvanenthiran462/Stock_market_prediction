@@ -1,0 +1,91 @@
+	{% load static %}
+	
+	
+	<style>
+		.testimonial-img {
+width: 200px;  /* Set your desired width */
+height: 200px; /* Set your desired height */
+object-fit: cover; /* Ensures the image maintains aspect ratio and fits within the dimensions */
+border-radius: 50%; /* Optional: Make the image circular */
+		   }
+
+	</style>
+	
+	
+	{% include "header.html"%}
+ 
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row fullscreen d-flex justify-content-center align-items-center">
+						<div class="banner-content col-lg-9 col-md-12 justify-content-center">
+							
+							<h1>
+								Predict Next Price	 >>		
+							</h1>
+							<p class="text-white mx-auto">
+								This model predicts stock movements using real-time data and trends for informed investment decisions</p>
+							<a href="{% url 'select' %}" class="primary-btn header-btn text-uppercase mt-10">Predict Next Result</a>
+						</div>											
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->
+
+		
+
+			<!-- Start testomial Area -->
+			<section class="testomial-area section-gap">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-60 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">About our team</h1>
+								<p></p>
+							</div>
+						</div>
+					</div>						
+					<div class="row">
+						<div class="active-testimonial-carusel">
+							<div class="single-testimonial item">
+								<img class="testimonial-img mx-auto" src="{% static 'img/image.png' %}" alt="">
+								<p class="desc"></p>
+								<h4>Jedson Runyoro</h4>
+								<p>
+									B.Tech student<br>
+									Department of Computer Engineering<br>
+									Marwadi University, Rajkot, India
+								</p>
+							</div>
+			
+							<div class="single-testimonial item">
+								<img class="testimonial-img mx-auto" src="{% static 'img/image (1).png' %}" alt="">
+								<p class="desc"></p>
+								<h4>Selam Habtewold</h4>
+								<p>
+									B.Tech student<br>
+									Department of Computer Engineering<br>
+									Marwadi University, Rajkot, India
+								</p>
+							</div>
+			
+							<div class="single-testimonial item">
+								<img class="testimonial-img mx-auto" src="{% static 'img/3.png' %}" alt="">
+								<p class="desc"></p>
+								<h4>Puvanenthirarajah</h4>
+								<p>
+									B.Tech student<br>
+									Department of Computer Engineering<br>
+									Marwadi University, Rajkot, India
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</section>
+			
+				<hr>
+				<br>	
+
+			{% include "footer.html" %}

@@ -1,0 +1,92 @@
+{% load static %}
+	
+{% include "header.html"%}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Stock for Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f0f8ff, #e0f7fa);
+            text-align: center;
+            padding: 50px;
+            color: #333;
+            margin-top: 100px;
+
+        h1 {
+            color: #0073e6;
+            margin-bottom: 20px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin: 20px 0;
+        }
+
+        .dropdown-options {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            border: 2px solid #0073e6;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            width: 200px;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown:hover .dropdown-options {
+            display: block;
+        }
+
+        .dropdown-options a {
+            color: #0073e6;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            transition: background-color 0.3s;
+        }
+
+        .dropdown-options a:hover {
+            background-color: #ff6600;
+            color: white;
+        }
+
+        h2 {
+            color: #4a4a4a;
+            margin-top: 20px;
+        }
+
+        .header-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin: auto;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <h1>Stock Price Prediction</h1>
+        <h2>Select the Stock</h2>
+        <div class="dropdown">
+            <button style="background-color: #0073e6; color: white; border: none; padding: 15px; border-radius: 5px; cursor: pointer; font-size: 16px;">
+                Choose Stock
+            </button>
+            <div class="dropdown-options">
+                <a href="{% url 'Google_price' %}">GOOGLE</a>
+                <a href="{% url 'asd' %}">MICROSOFT</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
