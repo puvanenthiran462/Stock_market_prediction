@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# Stock_market_prediction
+
 Stock_market_prediction
 =======
 
@@ -31,6 +30,3 @@ python manage.py runserver
 
 
 
-**/
-
->>>>>>> b6f5c55 (Your commit message)
